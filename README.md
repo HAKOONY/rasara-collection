@@ -1,6 +1,5 @@
 # rasara-collection
-라사라 졸업전시 웹페이지 프로젝트
-[Uploading index.html…]()<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ko">
 <head>
   <meta charset="UTF-8" />

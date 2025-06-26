@@ -159,30 +159,44 @@
       <img src="https://i.postimg.cc/sD4r1Vmv/rasara-oglogo.png" class="logo" alt="라사라 로고" />
 
       <div class="menu-bar">
-        <div class="menu-item">WOMEN
+        <div class="menu-item">OVI
           <div class="submenu">
             <a href="#">티셔츠</a>
             <a href="#">바지</a>
             <a href="#">원피스</a>
           </div>
         </div>
-        <div class="menu-item">MEN
+        <div class="menu-item">SYNTH
           <div class="submenu">
             <a href="#">셔츠</a>
             <a href="#">팬츠</a>
             <a href="#">자켓</a>
           </div>
         </div>
-        <div class="menu-item">ACC
+        <div class="menu-item">?
           <div class="submenu">
             <a href="#">모자</a>
             <a href="#">가방</a>
             <a href="#">양말</a>
           </div>
         </div>
+         <div class="menu-item">?
+          <div class="submenu">
+            <a href="#">모자</a>
+            <a href="#">가방</a>
+            <a href="#">양말</a>
       </div>
     </div>
+     <div class="menu-item">?
+          <div class="submenu">
+            <a href="#">모자</a>
+            <a href="#">가방</a>
+            <a href="#">양말</a>
   </div>
+</div>
+</div>
+</div>
+</div>
 
   <!-- 배너 -->
   <img class="banner" src="https://i.postimg.cc/VsM1Q9b9/image.jpg" alt="썸머기획전 배너" />

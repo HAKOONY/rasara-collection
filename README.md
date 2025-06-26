@@ -169,12 +169,9 @@
           <div class="submenu">       
           </div>
         </div>
-
-        <div class="menu-item">timelessabout
-        <a href="https://hakoony.github.io/rasara-collection/timelessabout.html">timelessabout</a>
-          <div class="submenu">
-          </div>
-        </div>
+      <div class="menu-item">
+   			<a href="https://hakoony.github.io/rasara-collection/timelessabout.html">timelessabout</a>
+					</div>          
 
          <div class="menu-item">?
           <div class="submenu">
@@ -196,8 +193,8 @@
 <!-- 슬라이드 배너 -->
 <div class="slider">
   <img src="https://i.postimg.cc/VsM1Q9b9/image.jpg" class="slide active" />
-  <img src="https://i.postimg.cc/2yhmkBpT/rasara-logo.png" class="slide active" />
-  <img src="https://i.postimg.cc/pdCmfTRJ/1750925772270.png"class="slide active" />
+  <img src="https://i.postimg.cc/2yhmkBpT/rasara-logo.png" class="slide" />
+  <img src="https://i.postimg.cc/pdCmfTRJ/1750925772270.png"class="slide" />
 </div>
 
 <style>

@@ -6,14 +6,15 @@
   <style>
     .slider {
       width: 100%;
-      max-height: 400px;
+      height: 350px;
       overflow: hidden;
       position: relative;
     }
 
     .slide {
       width: 100%;
-      height: auto;
+      height: 100%;
+      object-fit: cover;
       position: absolute;
       top: 0;
       left: 0;
@@ -28,9 +29,10 @@
   </style>
 </head>
 <body>
+
   <!-- 🔄 자동 슬라이드 배너 -->
   <div class="slider">
-    <img src="https://i.postimg.cc/XN9x0XNB/ovi.png" class="slide" />
+    <img src="https://i.postimg.cc/XN9x0XNB/ovi.png" class="slide active" />
     <img src="https://i.postimg.cc/XN9x0XNB/ovi.png" class="slide" />
     <img src="https://i.postimg.cc/8CDNt7Cd/ovi-2.png" class="slide" />
   </div>
@@ -56,8 +58,8 @@
       showSlide(current);
     }
 
-    showSlide(current); // 초기 슬라이드 보이기
-    setInterval(nextSlide, 3000); // 3초 간격 전환
+    setInterval(nextSlide, 3000);
   </script>
+
 </body>
 </html>

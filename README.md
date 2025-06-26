@@ -29,7 +29,7 @@
     }
 
     .logo {
-      height: 25px;
+      height: 40px;
     }
 
     .menu-bar {
@@ -200,8 +200,8 @@
 <!-- 슬라이드 배너 시작 -->
 <div class="slider">
   <img src="https://i.postimg.cc/VsM1Q9b9/image.jpg" class="slide active" />
-  <img src="https://i.postimg.cc/sD4r1Vmv/rasara-oglogo.png" class="slide" />
-  <img src="<img src="https://i.postimg.cc/SxFVJ8qB/brander-logo-red.jpg" alt="BRAND-ER 로고" style="height: 40px;" />" class="slide" />
+  <img src="https://i.postimg.cc/2yhmkBpT/rasara-logo.png" alt="라사라 로고" style="height: 30px;" />
+  <img src="<img src="https://i.postimg.cc/SxFVJ8qB/brander-logo-red.jpg" alt="BRAND-ER 로고" style="height: 30px;" />" class="slide" />
 </div>
 
 <style>

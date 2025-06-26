@@ -202,7 +202,7 @@
   <img class="banner" src="https://i.postimg.cc/VsM1Q9b9/image.jpg" alt="썸머기획전 배너" />
 
   <!-- 타이틀 -->
-  <div class="title">25 RASARA COLLECTION</div>
+  <div class="title">25 RASARA X BRAND-ER COLLECTION /div>
 
   <!-- 상품 리스트 -->
   <div class="product-grid">

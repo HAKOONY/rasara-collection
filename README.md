@@ -164,25 +164,19 @@
           <div class="submenu">
         </div>
         </div>
+
         <div class="menu-item">SYNTH
-          <div class="submenu">
-            <a href="#">셔츠</a>
-            <a href="#">팬츠</a>
-            <a href="#">자켓</a>
+          <div class="submenu">       
           </div>
         </div>
-        <div class="menu-item">?
+
+        <div class="menu-item">timelessabout
           <div class="submenu">
-            <a href="#">모자</a>
-            <a href="#">가방</a>
-            <a href="#">양말</a>
           </div>
         </div>
+
          <div class="menu-item">?
           <div class="submenu">
-            <a href="#">모자</a>
-            <a href="#">가방</a>
-            <a href="#">양말</a>
       </div>
     </div>
      <div class="menu-item">?
@@ -198,10 +192,11 @@
 
   <!-- 배너 -->
 <!-- 슬라이드 배너 시작 -->
+<!-- 슬라이드 배너 -->
 <div class="slider">
   <img src="https://i.postimg.cc/VsM1Q9b9/image.jpg" class="slide active" />
-  <img src="https://i.postimg.cc/2yhmkBpT/rasara-logo.png" alt="라사라 로고" style="height: 30px;" />
-  <img src="<img src="https://i.postimg.cc/SxFVJ8qB/brander-logo-red.jpg" alt="BRAND-ER 로고" style="height: 30px;" />" class="slide" />
+  <img src="https://i.postimg.cc/2yhmkBpT/rasara-logo.png" class="slide" />
+  <img src="https://i.postimg.cc/SxFVJ8qB/brander-logo-red.jpg" class="slide" />
 </div>
 
 <style>
@@ -210,15 +205,18 @@
     height: 250px;
     position: relative;
     overflow: hidden;
+    background-color: #fff;
   }
 
   .slider img {
     position: absolute;
     width: 100%;
-    height: 76%;
-    object-fit: cover;
+    height: 100%;
+    object-fit: contain; /* ✅ 로고 전체가 잘 보이도록 */
+    padding: 10px;        /* ✅ 너무 바짝 붙지 않도록 */
     opacity: 0;
     transition: opacity 1s ease-in-out;
+    background-color: #fff;
   }
 
   .slider img.active {
@@ -271,7 +269,7 @@
 
     <a href="detail-5.html" class="product-card">
       <img src="https://i.postimg.cc/ZnkSvnXy/image.png" alt="상품5" />
-      <div class="product-name">---</div>
+      <div class="product-name">time less about</div>
       <div class="product-price">₩00,000</div>
     </a>
 

@@ -2,64 +2,80 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>OVI 브랜드 소개</title>
   <style>
-    .slider {
-      width: 100%;
-      height: 450px;
-      overflow: hidden;
-      position: relative;
+    body {
+      margin: 0;
+      font-family: 'Noto Sans KR', sans-serif;
+      background-color: #fff;
+      color: #333;
     }
 
-    .slide {
+    .brand-header {
+      display: flex;
+      align-items: center;
+      padding: 20px;
+      gap: 15px;
+    }
+
+    .brand-logo {
+      height: 40px;
+    }
+
+    .brand-title {
+      font-size: 20px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    .main-image {
       width: 100%;
-      height: 100%;
+      height: 100vh;
       object-fit: cover;
-      position: absolute;
-      top: 0;
-      left: 0;
-      opacity: 0;
-      transition: opacity 1s ease-in-out;
     }
 
-    .slide.active {
-      opacity: 1;
-      z-index: 1;
+    .brand-description {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+      font-size: 16px;
+      line-height: 1.6;
+      text-align: center;
+    }
+
+    @media (max-width: 768px) {
+      .brand-header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .brand-title {
+        font-size: 18px;
+        margin-top: 10px;
+      }
     }
   </style>
 </head>
 <body>
 
-  <!-- 🔄 자동 슬라이드 배너 -->
-  <div class="slider">
-    <img src="https://i.postimg.cc/XN9x0XNB/ovi.png" class="slide active" />
-    <img src="https://i.postimg.cc/XN9x0XNB/ovi.png" class="slide" />
-    <img src="https://i.postimg.cc/8CDNt7Cd/ovi-2.png" class="slide" />
+  <!-- 상단 로고 + 브랜드명 -->
+<div class="brand-header">
+  <img src="https://i.postimg.cc/KvvCx7G5/1750933135843.jpg" alt="브랜드 로고" class="brand-logo" />
+  <div class="brand-title">TIMELESSABOUT</div>
+</div>
+
+  <!-- 메인 배너 이미지 -->
+  <img src="https://i.postimg.cc/zGs3WG3V/1750925772404.png" alt="메인 이미지" class="main-image" />
+
+  <!-- 브랜드 설명 -->
+  <div class="brand-description">
+    <h2>TIMELESSABOUT</h2>
+    <p>
+      다크웨어를 기반으로 시크한 무드와 아티잔 정신을 결합해 단순한 블랙이 아닌,<br />
+      검정의 미학을 재해석하여 깊이있는 스타일을 창조하는 유니섹스 아방가르드 브랜드.<br />  
+    </p>
   </div>
-
-  <!-- OVI 브랜드 소개 -->
-  <h1>OVI</h1>
-  <p>당신의 삶이 작품이라면, 그 옷은 당신의 붓이 될 수 있다.</p>
-  <p>OVI는 예술과 일상의 경계를 허무는 브랜드입니다.</p>
-
-  <script>
-    const slides = document.querySelectorAll(".slide");
-    let current = 0;
-
-    function showSlide(index) {
-      slides.forEach((slide, i) => {
-        slide.classList.remove("active");
-        if (i === index) slide.classList.add("active");
-      });
-    }
-
-    function nextSlide() {
-      current = (current + 1) % slides.length;
-      showSlide(current);
-    }
-
-    setInterval(nextSlide, 3000);
-  </script>
 
 </body>
 </html>

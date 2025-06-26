@@ -198,12 +198,48 @@
 
   <!-- 배너 -->
 <!-- ⬇️ 이거로 교체 -->
+<!-- 슬라이드 배너 시작 -->
 <div class="slider">
+  <img src="https://i.postimg.cc/VsM1Q9b9/image.jpg" class="slide active" />
   <img src="https://i.postimg.cc/XN9x0XNB/ovi.png" class="slide" />
   <img src="https://i.postimg.cc/8CDNt7Cd/ovi-2.png" class="slide" />
-  <img src="https://i.postimg.cc/VsM1Q9b9/image.jpg" class="slide" />
 </div>
 
+<style>
+  .slider {
+    width: 100%;
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .slider img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+
+  .slider img.active {
+    opacity: 1;
+    z-index: 1;
+  }
+</style>
+
+<script>
+  const slides = document.querySelectorAll(".slide");
+  let index = 0;
+
+  function showNextSlide() {
+    slides[index].classList.remove("active");
+    index = (index + 1) % slides.length;
+    slides[index].classList.add("active");
+  }
+
+  setInterval(showNextSlide, 3000); // 3초마다 전환
+</script>
   <!-- 타이틀 -->
   <div class="title">25 RASARA X BRAND-ER COLLECTION </div>
 

@@ -29,7 +29,7 @@
     }
 
     .logo {
-      height: 40px;
+      height: 25px;
     }
 
     .menu-bar {
@@ -201,7 +201,7 @@
 <div class="slider">
   <img src="https://i.postimg.cc/VsM1Q9b9/image.jpg" class="slide active" />
   <img src="https://i.postimg.cc/sD4r1Vmv/rasara-oglogo.png" class="slide" />
-  <img src="https://i.postimg.cc/KvjbwW9h/brander-logo-mockup.jpg" class="slide" />
+  <img src="<img src="https://i.postimg.cc/SxFVJ8qB/brander-logo-red.jpg" alt="BRAND-ER 로고" style="height: 40px;" />" class="slide" />
 </div>
 
 <style>

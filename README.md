@@ -200,8 +200,8 @@
 <!-- 슬라이드 배너 시작 -->
 <div class="slider">
   <img src="https://i.postimg.cc/VsM1Q9b9/image.jpg" class="slide active" />
-  <img src="https://i.postimg.cc/XN9x0XNB/ovi.png" class="slide" />
-  <img src="https://i.postimg.cc/8CDNt7Cd/ovi-2.png" class="slide" />
+  <img src="https://i.postimg.cc/sD4r1Vmv/rasara-oglogo.png" class="slide" />
+  <img src="https://i.postimg.cc/KvjbwW9h/brander-logo-mockup.jpg" class="slide" />
 </div>
 
 <style>

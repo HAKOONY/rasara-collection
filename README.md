@@ -197,7 +197,6 @@
 </div>
 
   <!-- 배너 -->
-<!-- ⬇️ 이거로 교체 -->
 <!-- 슬라이드 배너 시작 -->
 <div class="slider">
   <img src="https://i.postimg.cc/VsM1Q9b9/image.jpg" class="slide active" />

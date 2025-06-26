@@ -193,13 +193,13 @@
   <!-- 상품 리스트 -->
   <div class="product-grid">
 
-    <a href="detail-ovi1.html" class="product-card">
+    <a href="https://www.instagram.com/o_vi_official?igsh=MWxqZHg3bTRvd2dwYw==" class="product-card">
       <img src="https://i.postimg.cc/XN9x0XNB/ovi.png" alt="상품1" />
       <div class="product-name">OVI_1</div>
       <div class="product-price">₩00,000</div>
     </a>
 
-    <a href="detail-ovi2.html" class="product-card">
+    <a href="https://www.instagram.com/o_vi_official?igsh=MWxqZHg3bTRvd2dwYw==" class="product-card">
       <img src="https://i.postimg.cc/8CDNt7Cd/ovi-2.png" alt="상품2" />
       <div class="product-name">OVI_2</div>
       <div class="product-price">₩000,000</div>

@@ -159,8 +159,8 @@
       <img src="https://i.postimg.cc/sD4r1Vmv/rasara-oglogo.png" class="logo" alt="라사라 로고" />
 
       <div class="menu-bar">
-        <div class="menu-item">OVI
-  					<a href="pages/ovi.html">OVI페이지</a>
+        <div class="menu-item">
+  					<a href="https://hakoony.github.io/rasara-collection/ovi.html">OVI</a>
           <div class="submenu">
             <a href="#">티셔츠</a>
             <a href="#">바지</a>

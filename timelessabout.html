@@ -16,17 +16,24 @@
       display: flex;
       align-items: center;
       padding: 20px;
+      gap: 15px;
     }
 
     .brand-logo {
       height: 40px;
     }
 
-			.main-image {
-  		width: 100%;
-  		height: 100vh;
-  		object-fit: cover;
-			}
+    .brand-title {
+      font-size: 20px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    .main-image {
+      width: 100%;
+      height: 100vh;
+      object-fit: cover;
+    }
 
     .brand-description {
       max-width: 800px;
@@ -36,25 +43,39 @@
       line-height: 1.6;
       text-align: center;
     }
+
+    @media (max-width: 768px) {
+      .brand-header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .brand-title {
+        font-size: 18px;
+        margin-top: 10px;
+      }
+    }
   </style>
 </head>
 <body>
 
-  <!-- ⬆️ 왼쪽 상단 브랜드 로고 -->
+  <!-- 상단 로고 + 브랜드명 -->
   <div class="brand-header">
     <img src="https://i.postimg.cc/pdCmfTRJ/1750925772270.png" alt="브랜드 로고" class="brand-logo" />
+    <div class="brand-title">TIMELESSABOUT</div>
   </div>
 
-  <!-- 📸 브랜드 메인 이미지 -->
+  <!-- 메인 배너 이미지 -->
   <img src="https://i.postimg.cc/zGs3WG3V/1750925772404.png" alt="메인 이미지" class="main-image" />
 
-  <!-- 📝 브랜드 소개 텍스트 -->
+  <!-- 브랜드 설명 -->
   <div class="brand-description">
-    <h2>TIME LESS ABOUT</h2>
+    <h2>TIMELESSABOUT</h2>
     <p>
-      일상에 리듬을 더하다.  
-      TIMELESSABOUT는 구조적 실루엣과 유연한 스타일을 결합해  
-      도시 속 자유로운 감성을 표현하는 브랜드입니다.
+      유려한 곡선과 구조적인 실루엣,<br />
+      시간에 구애받지 않는 ‘지금 이 순간’의 아름다움을 담다.<br /><br />
+      TIMELESSABOUT는 클래식한 무드 위에 유연함을 더해  
+      도시의 여백과 움직임을 입는 감성적인 브랜드입니다.
     </p>
   </div>
 

@@ -160,7 +160,7 @@
 
       <div class="menu-bar">
         <div class="menu-item">OVI
-  					<a href="#"></a>
+  					<a href="pages/ovi.html">OVI페이지</a>
           <div class="submenu">
             <a href="#">티셔츠</a>
             <a href="#">바지</a>

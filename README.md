@@ -197,7 +197,12 @@
 </div>
 
   <!-- 배너 -->
-  <img class="banner" src="https://i.postimg.cc/VsM1Q9b9/image.jpg" alt="썸머기획전 배너" />
+<!-- ⬇️ 이거로 교체 -->
+<div class="slider">
+  <img src="https://i.postimg.cc/XN9x0XNB/ovi.png" class="slide" />
+  <img src="https://i.postimg.cc/8CDNt7Cd/ovi-2.png" class="slide" />
+  <img src="https://i.postimg.cc/VsM1Q9b9/image.jpg" class="slide" />
+</div>
 
   <!-- 타이틀 -->
   <div class="title">25 RASARA X BRAND-ER COLLECTION </div>

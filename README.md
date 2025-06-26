@@ -79,7 +79,7 @@
     }
 
     .banner {
-      width: 100%;
+      width: 50%;
       height: auto;
     }
 
@@ -206,16 +206,16 @@
 
 <style>
   .slider {
-    width: 100%;
-    height: 350px;
+    width: 50%;
+    height: 150px;
     position: relative;
     overflow: hidden;
   }
 
   .slider img {
     position: absolute;
-    width: 100%;
-    height: 100%;
+    width: 50%;
+    height: 50%;
     object-fit: cover;
     opacity: 0;
     transition: opacity 1s ease-in-out;

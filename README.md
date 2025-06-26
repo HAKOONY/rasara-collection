@@ -162,10 +162,7 @@
         <div class="menu-item">
   					<a href="https://hakoony.github.io/rasara-collection/ovi.html">OVI</a>
           <div class="submenu">
-            <a href="#">티셔츠</a>
-            <a href="#">바지</a>
-            <a href="#">원피스</a>
-          </div>
+        </div>
         </div>
         <div class="menu-item">SYNTH
           <div class="submenu">

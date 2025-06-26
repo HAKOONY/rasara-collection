@@ -189,12 +189,11 @@
 </div>
 
   <!-- 배너 -->
-<!-- 슬라이드 배너 시작 -->
 <!-- 슬라이드 배너 -->
 <div class="slider">
   <img src="https://i.postimg.cc/VsM1Q9b9/image.jpg" class="slide active" />
-  <img src="https://i.postimg.cc/2yhmkBpT/rasara-logo.png" class="slide" />
-  <img src="https://i.postimg.cc/pdCmfTRJ/1750925772270.png"class="slide" />
+  <img src="https://i.postimg.cc/pdCmfTRJ/1750925772270.png" class="slide" />
+  <img src="https://postimg.cc/jWWqKRWD"class="slide" />
 </div>
 
 <style>

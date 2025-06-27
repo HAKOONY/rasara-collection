@@ -124,6 +124,16 @@
       background-color: #444;
     }
 
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 40px 20px;
+      max-width: 1200px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
     .product-card {
       display: block;
       border: 1px solid #eee;
@@ -134,11 +144,7 @@
       text-decoration: none;
       color: inherit;
       background-color: #fff;
-      width: 90%;
-      max-width: 500px;
-      margin: 60px auto;
-      padding: 30px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      padding: 20px;
     }
 
     .product-card:hover {
@@ -148,7 +154,6 @@
     .product-card img {
       width: 100%;
       height: auto;
-      display: block;
       border-radius: 10px;
     }
 
@@ -197,23 +202,30 @@
     </a>
   </div>
 
-  <!-- 카드 섹션 -->
-  <div class="product-card">
-    <img src="https://i.postimg.cc/XN9x0XNB/ovi.png" alt="OVI_1">
-    <div class="product-name">OVI_1</div>
-    <div class="product-price">₩00,000</div>
-  </div>
+  <div class="product-grid">
+    <a href="https://www.instagram.com/o_vi_official/" class="product-card" target="_blank">
+      <img src="https://i.postimg.cc/XN9x0XNB/ovi.png" alt="OVI_1">
+      <div class="product-name">OVI_1</div>
+      <div class="product-price">₩00,000</div>
+    </a>
 
-  <div class="product-card">
-    <img src="https://i.postimg.cc/8CDNt7Cd/ovi-2.png" alt="OVI_2">
-    <div class="product-name">OVI_2</div>
-    <div class="product-price">₩000,000</div>
-  </div>
+    <a href="https://www.instagram.com/o_vi_official/" class="product-card" target="_blank">
+      <img src="https://i.postimg.cc/8CDNt7Cd/ovi-2.png" alt="OVI_2">
+      <div class="product-name">OVI_2</div>
+      <div class="product-price">₩000,000</div>
+    </a>
 
-  <div class="product-card">
-    <img src="https://i.postimg.cc/k4LnNfRG/synth.png" alt="SYNTH_1">
-    <div class="product-name">SYNTH_1</div>
-    <div class="product-price">₩00,000</div>
+    <a href="https://www.instagram.com/synth_official/" class="product-card" target="_blank">
+      <img src="https://i.postimg.cc/k4LnNfRG/synth.png" alt="SYNTH_1">
+      <div class="product-name">SYNTH_1</div>
+      <div class="product-price">₩00,000</div>
+    </a>
+
+    <a href="https://www.instagram.com/timelessabout/" class="product-card" target="_blank">
+      <img src="https://i.postimg.cc/ZnkSvnXy/image.png" alt="TIMELESS_1">
+      <div class="product-name">TIMELESS_1</div>
+      <div class="product-price">₩00,000</div>
+    </a>
   </div>
 
   <script>

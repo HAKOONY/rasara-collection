@@ -238,9 +238,9 @@
   <div class="title">25 RASARA X BRAND-ER COLLECTION </div>
 
 <div style="max-width: 600px; margin: 50px auto; padding: 40px; background: #fff; box-shadow: 0 0 15px rgba(0,0,0,0.05); border-radius: 12px; text-align: center;">
-  <h2 style="font-size: 24px; font-weight: bold; margin-bottom: 15px;">Magazine B 공유 링크</h2>
-  <p style="font-size: 15px; color: #555; margin-bottom: 25px;">브랜드의 본질을 깊이 있게 탐구하다</p>
-  <a href="https://share.google/R07cj5l6Q6KRqvljH" target="_blank" style="display: inline-block; padding: 12px 30px; background-color: #000; color: #fff; border-radius: 30px; text-decoration: none; font-weight: 500;">
+  <h2 style="font-size: 24px; font-weight: bold; margin-bottom: 15px;">BRAND-ER</h2>
+  <p style="font-size: 15px; color: #555; margin-bottom: 25px;">당신만의 브랜드를 만들다.</p>
+  <a href="https://brand-er.store/custom/index.html" target="_blank" style="display: inline-block; padding: 12px 30px; background-color: #f5f5f5; color:#a1001a;border-radius: 30px; text-decoration: none; font-weight: 500;">
     링크 열기
   </a>
 </div>

@@ -200,7 +200,7 @@
 <div class="slider">
   <img src="https://i.postimg.cc/VsM1Q9b9/image.jpg" class="slide active" />
   <img src="https://i.postimg.cc/pdCmfTRJ/1750925772270.png" class="slide" />
-  <img src="https://i.postimg.cc/76k0stMf/image.png" class="slide"style="max-width: 200px; height: auto; display: block; margin: 0 auto;" /> />
+  <img src="https://i.postimg.cc/76k0stMf/image.png" class="slide"style="transform: scale(0.8);" />
 </div>
 
 <style>
@@ -213,15 +213,15 @@
   }
 
   .slider img {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: contain; /* ✅ 로고 전체가 잘 보이도록 */
-    padding: 10px;        /* ✅ 너무 바짝 붙지 않도록 */
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-    background-color: #fff;
-  }
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: scale-down; /* 또는 contain 유지 */
+  padding: 10px;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  background-color: transparent; /* ✅ 배경 투명하게 */
+}
 
   .slider img.active {
     opacity: 1;
@@ -244,7 +244,7 @@
   <!-- 타이틀 -->
   <div class="title">25 RASARA X BRAND-ER COLLECTION </div>
 
-<div style="max-width: 600px; margin: 50px auto; padding: 40px; background: #f5f5f5; box-shadow: 0 0 15px rgba(0,0,0,0.05); border-radius: 12px; text-align: center;">
+<div style="<div style="max-width: 600px; margin: 50px auto; padding: 40px; background: #f5f5f5; box-shadow: 0 0 15px rgba(0,0,0,0.05); border-radius: 12px; text-align: center; display: flex; flex-direction: column; align-items: center;">
   <img src="https://i.postimg.cc/76k0stMf/image.png" alt="BRAND-ER 로고" style="height: 40px; margin-bottom: 20px;">
   <h2 style="font-size: 36px; font-weight: bold; margin-bottom: 15px;">BRAND-ER</h2>
   <p style="font-size: 25px; color: #555; margin-bottom: 25px;">당신만의 브랜드를 만들다.</p>
@@ -253,40 +253,6 @@ make my brand
   </a>
 </div>
 
-  <!-- 상품 리스트 -->
-  <div class="product-grid">
-
-    <a href="https://www.instagram.com/o_vi_official?igsh=MWxqZHg3bTRvd2dwYw==" class="product-card">
-      <img src="https://i.postimg.cc/XN9x0XNB/ovi.png" alt="상품1" />
-      <div class="product-name">OVI_1</div>
-      <div class="product-price">₩00,000</div>
-    </a>
-
-    <a href="https://www.instagram.com/o_vi_official?igsh=MWxqZHg3bTRvd2dwYw==" class="product-card">
-      <img src="https://i.postimg.cc/8CDNt7Cd/ovi-2.png" alt="상품2" />
-      <div class="product-name">OVI_2</div>
-      <div class="product-price">₩000,000</div>
-    </a>
-
-    <a href="detail-synth1.html" class="product-card">
-      <img src="https://i.postimg.cc/k4LnNfRG/synth.png" alt="상품3" />
-      <div class="product-name">SYNTH_1</div>
-      <div class="product-price">₩00,000</div>
-    </a>
-
-    <a href="detail-4.html" class="product-card">
-      <img src="https://i.postimg.cc/xd4YYtR5/image.png" alt="상품4" />
-      <div class="product-name">---</div>
-      <div class="product-price">₩00,000</div>
-    </a>
-
-    <a href="detail-5.html" class="product-card">
-      <img src="https://i.postimg.cc/ZnkSvnXy/image.png" alt="상품5" />
-      <div class="product-name">time less about</div>
-      <div class="product-price">₩00,000</div>
-    </a>
-
-  </div>
 
 </body>
 </html>

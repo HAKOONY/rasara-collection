@@ -18,6 +18,72 @@
       transition: background-color 0.6s ease;
     }
 
+    .header-wrap {
+      background-color: #fff;
+      border-bottom: 1px solid #eee;
+      width: 100%;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 20px;
+      max-width: 1280px;
+      margin: 0 auto;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      height: 40px;
+    }
+
+    .menu-bar {
+      display: flex;
+      gap: 20px;
+      position: relative;
+      flex-wrap: wrap;
+    }
+
+    .menu-item {
+      position: relative;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .menu-item:hover {
+      color: #a1001a;
+    }
+
+    .submenu {
+      display: none;
+      position: absolute;
+      top: 30px;
+      left: 0;
+      background-color: #fff;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      padding: 10px 0;
+      border-radius: 6px;
+      z-index: 1000;
+      min-width: 140px;
+    }
+
+    .menu-item:hover .submenu {
+      display: block;
+    }
+
+    .submenu a {
+      display: block;
+      padding: 8px 20px;
+      text-decoration: none;
+      font-size: 14px;
+      color: #333;
+    }
+
+    .submenu a:hover {
+      background-color: #f5f5f5;
+    }
+
     .container {
       text-align: center;
       padding: 40px;
@@ -32,8 +98,9 @@
     .title {
       font-size: 24px;
       font-weight: bold;
-      margin-bottom: 10px;
-      letter-spacing: 1px;
+      text-align: center;
+      margin: 30px 0 20px;
+      padding: 0 15px;
     }
 
     .subtitle {
@@ -58,18 +125,30 @@
     }
 
     .product-card {
+      display: block;
+      border: 1px solid #eee;
+      border-radius: 10px;
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.2s;
+      text-decoration: none;
+      color: inherit;
+      background-color: #fff;
       width: 90%;
       max-width: 500px;
       margin: 60px auto;
       padding: 30px;
-      border-radius: 16px;
-      text-align: center;
       box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-      transition: background-color 0.4s ease-in-out, transform 0.3s;
+    }
+
+    .product-card:hover {
+      transform: scale(1.03);
     }
 
     .product-card img {
       width: 100%;
+      height: auto;
+      display: block;
       border-radius: 10px;
     }
 
@@ -78,9 +157,38 @@
       font-size: 18px;
       font-weight: bold;
     }
+
+    .product-price {
+      color: #a1001a;
+      font-weight: bold;
+      padding-bottom: 15px;
+      font-size: 13px;
+    }
+
+    @media (max-width: 480px) {
+      .title {
+        font-size: 20px;
+      }
+
+      .menu-bar {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
   </style>
 </head>
 <body>
+  <div class="header-wrap">
+    <div class="header">
+      <img src="https://i.postimg.cc/sD4r1Vmv/rasara-oglogo.png" class="logo" alt="로고" />
+      <div class="menu-bar">
+        <div class="menu-item">OVI</div>
+        <div class="menu-item">SYNTH</div>
+        <div class="menu-item">ABOUT</div>
+      </div>
+    </div>
+  </div>
+
   <div class="container">
     <div class="title">Magazine B</div>
     <div class="subtitle">브랜드의 본질을 깊이 있게 탐구하다</div>
@@ -89,26 +197,29 @@
     </a>
   </div>
 
-  <!-- 예시 카드들 -->
+  <!-- 카드 섹션 -->
   <div class="product-card">
     <img src="https://i.postimg.cc/XN9x0XNB/ovi.png" alt="OVI_1">
     <div class="product-name">OVI_1</div>
+    <div class="product-price">₩00,000</div>
   </div>
 
   <div class="product-card">
     <img src="https://i.postimg.cc/8CDNt7Cd/ovi-2.png" alt="OVI_2">
     <div class="product-name">OVI_2</div>
+    <div class="product-price">₩000,000</div>
   </div>
 
   <div class="product-card">
     <img src="https://i.postimg.cc/k4LnNfRG/synth.png" alt="SYNTH_1">
     <div class="product-name">SYNTH_1</div>
+    <div class="product-price">₩00,000</div>
   </div>
 
   <script>
     const body = document.body;
     const cards = document.querySelectorAll(".product-card");
-    const colors = ["#f7e8ec", "#f8f8f8"]; // 와인빛, 라이트그레이 번갈아
+    const colors = ["#f7e8ec", "#f8f8f8"];
 
     window.addEventListener("scroll", () => {
       cards.forEach((card, index) => {

@@ -245,7 +245,7 @@
   <div class="title">25 RASARA X BRAND-ER COLLECTION </div>
 
 <div style="max-width: 600px; margin: 50px auto; padding: 40px; background: #f5f5f5; box-shadow: 0 0 15px rgba(0,0,0,0.05); border-radius: 12px; text-align: center;">
-  <img src="https://i.postimg.cc/zBb67B7J/BRAND-ER-logo-02-wine.png" alt="BRAND-ER 로고" style="height: 40px; margin-bottom: 20px;">
+  <img src="https://i.postimg.cc/76k0stMf/image.png" alt="BRAND-ER 로고" style="height: 40px; margin-bottom: 20px;">
   <h2 style="font-size: 24px; font-weight: bold; margin-bottom: 15px;">BRAND-ER</h2>
   <p style="font-size: 15px; color: #555; margin-bottom: 25px;">당신만의 브랜드를 만들다.</p>
   <a href="https://brand-er.store/custom/index.html" target="_blank" style="display: inline-block; padding: 12px 30px; background-color: #f5f5f5; color:#a1001a;border-radius: 30px; text-decoration: none; font-weight: 500;">

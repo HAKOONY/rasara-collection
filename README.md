@@ -200,7 +200,7 @@
 <div class="slider">
   <img src="https://i.postimg.cc/VsM1Q9b9/image.jpg" class="slide active" />
   <img src="https://i.postimg.cc/pdCmfTRJ/1750925772270.png" class="slide" />
-  <img src="https://i.postimg.cc/KvvCx7G5/1750933135843.jpg"class="slide" />
+  <img src="https://i.postimg.cc/76k0stMf/image.png" />
 </div>
 
 <style>
@@ -250,8 +250,6 @@
   <p style="font-size: 15px; color: #555; margin-bottom: 25px;">당신만의 브랜드를 만들다.</p>
   <a href="https://brand-er.store/custom/index.html" target="_blank" style="display: inline-block; padding: 12px 30px; background-color: #f5f5f5; color:#a1001a;border-radius: 30px; text-decoration: none; font-weight: 500;">
     브랜더 되기
-  </a>
-</div>
   </a>
 </div>
 

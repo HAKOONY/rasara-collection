@@ -97,50 +97,30 @@
       margin: 30px 0 20px;
       padding: 0 15px;
     }
+    
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* 유동적으로 너비 조절 */
+  gap: 24px; /* 사진 사이 여백 */
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
 
-    .product-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-      gap: 16px;
-      max-width: 1200px;
-      margin: auto;
-      padding: 0 15px 40px;
-    }
+.image-grid img {
+  width: 100%;
+  aspect-ratio: 1 / 1.2;  /* ✅ 통일된 세로 비율 */
+  object-fit: cover;     /* ✅ 사진이 꽉 차게 */
+  border-radius: 16px;   /* ✅ 부드러운 테두리 */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05); /* ✅ 고급스러운 그림자 */
+  transition: transform 0.3s ease;
+}
 
-    .product-card {
-      display: block;
-      border: 1px solid #eee;
-      border-radius: 10px;
-      overflow: hidden;
-      text-align: center;
-      transition: transform 0.2s;
-      text-decoration: none;
-      color: inherit;
-      background-color: #fff;
-    }
+.image-grid img:hover {
+  transform: scale(1.03); /* ✅ 확대 효과 */
+}
 
-    .product-card:hover {
-      transform: scale(1.03);
-    }
-
-    .product-card img {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
-
-    .product-name {
-      padding: 15px 10px 5px;
-      font-size: 14px;
-      font-weight: 500;
-    }
-
-    .product-price {
-      color: #a1001a;
-      font-weight: bold;
-      padding-bottom: 15px;
-      font-size: 13px;
-    }
+ 
 
     @media (max-width: 480px) {
       .title {
@@ -251,6 +231,10 @@
   <a href="https://brand-er.store/custom/index.html" target="_blank" style="display: inline-block; padding: 12px 30px; background-color: #f5f5f5; color:#a1001a;border-radius: 30px; text-decoration: none; font-weight: 500;">
 make my brand    
   </a>
+</div>
+<div class="image-grid">
+  <img src="https://i.postimg.cc/XN9x0XNB/ovi.png" alt="ovi1" />
+  <img src="https://i.postimg.cc/k4LnNfRG/synth.png" alt="synth1" />
 </div>
 
 

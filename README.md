@@ -233,8 +233,8 @@ make my brand
   </a>
 </div>
 <div class="image-grid">
-  <img src="https://i.postimg.cc/rphnQsRN/1750937125634.png" alt="ovi1" />
-  <img src="https://i.postimg.cc/k4LnNfRG/synth.png" alt="synth1" />
+  <img src="https://i.postimg.cc/rphnQsRN/1750937125634.png" alt="ovi" />
+  <img src="https://i.postimg.cc/zGs3WG3V/1750925772404.png" alt="timelessabout" />
 </div>
 
 

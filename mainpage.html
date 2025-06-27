@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Magazine B 공유 링크</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Noto Sans KR', sans-serif;
+      background-color: #f8f8f8;
+      color: #111;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      min-height: 100vh;
+      transition: background-color 0.6s ease;
+    }
+
+    .container {
+      text-align: center;
+      padding: 40px;
+      background-color: white;
+      box-shadow: 0 0 15px rgba(0,0,0,0.05);
+      border-radius: 12px;
+      max-width: 600px;
+      width: 90%;
+      margin: 60px auto;
+    }
+
+    .title {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      letter-spacing: 1px;
+    }
+
+    .subtitle {
+      font-size: 16px;
+      color: #555;
+      margin-bottom: 30px;
+    }
+
+    .link-button {
+      display: inline-block;
+      background-color: #000;
+      color: #fff;
+      padding: 12px 24px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: background-color 0.3s ease;
+    }
+
+    .link-button:hover {
+      background-color: #444;
+    }
+
+    .product-card {
+      width: 90%;
+      max-width: 500px;
+      margin: 60px auto;
+      padding: 30px;
+      border-radius: 16px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      transition: background-color 0.4s ease-in-out, transform 0.3s;
+    }
+
+    .product-card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .product-name {
+      margin-top: 15px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="title">Magazine B</div>
+    <div class="subtitle">브랜드의 본질을 깊이 있게 탐구하다</div>
+    <a href="https://share.google/R07cj5l6Q6KRqvljH" target="_blank" class="link-button">
+      링크 열기
+    </a>
+  </div>
+
+  <!-- 예시 카드들 -->
+  <div class="product-card">
+    <img src="https://i.postimg.cc/XN9x0XNB/ovi.png" alt="OVI_1">
+    <div class="product-name">OVI_1</div>
+  </div>
+
+  <div class="product-card">
+    <img src="https://i.postimg.cc/8CDNt7Cd/ovi-2.png" alt="OVI_2">
+    <div class="product-name">OVI_2</div>
+  </div>
+
+  <div class="product-card">
+    <img src="https://i.postimg.cc/k4LnNfRG/synth.png" alt="SYNTH_1">
+    <div class="product-name">SYNTH_1</div>
+  </div>
+
+  <script>
+    const body = document.body;
+    const cards = document.querySelectorAll(".product-card");
+    const colors = ["#f7e8ec", "#f8f8f8"]; // 와인빛, 라이트그레이 번갈아
+
+    window.addEventListener("scroll", () => {
+      cards.forEach((card, index) => {
+        const rect = card.getBoundingClientRect();
+        if (rect.top >= 0 && rect.top <= window.innerHeight / 2) {
+          body.style.backgroundColor = colors[index % 2];
+        }
+      });
+    });
+  </script>
+</body>
+</html>

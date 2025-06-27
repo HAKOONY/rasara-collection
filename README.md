@@ -200,7 +200,7 @@
 <div class="slider">
   <img src="https://i.postimg.cc/VsM1Q9b9/image.jpg" class="slide active" />
   <img src="https://i.postimg.cc/pdCmfTRJ/1750925772270.png" class="slide" />
-  <img src="https://i.postimg.cc/76k0stMf/image.png" class="slide" />
+  <img src="https://i.postimg.cc/76k0stMf/image.png" class="slide"style="max-width: 200px; height: auto; display: block; margin: 0 auto;" /> />
 </div>
 
 <style>

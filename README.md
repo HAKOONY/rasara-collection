@@ -61,9 +61,16 @@
       z-index: 1000;
       min-width: 140px;
     }
+      
+       .menu-item a {
+      color: #111; /* 검정색 텍스트 */
+      text-decoration: none;
+      font-weight: bold;
+    }
 
-    .menu-item:hover .submenu {
-      display: block;
+    .menu-item a:hover {
+      color: #a1001a; /* hover 시 와인색 강조 */
+    }
     }
 
     .submenu a {
@@ -164,7 +171,7 @@
           <div class="submenu">
         </div>
         </div>
-
+ 
         <div class="menu-item">SYNTH
           <div class="submenu">       
           </div>

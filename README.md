@@ -114,7 +114,18 @@
   border-radius: 16px;   /* ✅ 부드러운 테두리 */
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05); /* ✅ 고급스러운 그림자 */
   transition: transform 0.3s ease;
-}
+
+  /* 👇 여기에 추가하세요 */
+  .image-item {
+    text-align: center;
+  }
+
+  .image-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
 
 .image-grid img:hover {
   transform: scale(1.03); /* ✅ 확대 효과 */
@@ -223,7 +234,8 @@
   <!-- 타이틀 -->
   <div class="title">25 RASARA X BRAND-ER COLLECTION </div>
 
-<div style="max-width: 600px; margin: 50px auto; padding: 40px; background: #f5f5f5; box-shadow: 0 0 15px rgba(0,0,0,0.05); border-radius: 12px; text-align: center; display: flex; flex-direction: column; align-items: center;">
+
+<div style="max-width: 600px; margin: 50px auto; padding: 40px; background: #ffffff; box-shadow: 0 0 15px rgba(0,0,0,0.05); border-radius: 12px; text-align: center; display: flex; flex-direction: column; align-items: center;">
   <img src="https://i.postimg.cc/76k0stMf/image.png" alt="BRAND-ER 로고" style="height: 40px; margin-bottom: 20px;">
   <h2 style="font-size: 36px; font-weight: bold; margin-bottom: 15px;">BRAND-ER</h2>
   <p style="font-size: 25px; color: #555; margin-bottom: 25px;">당신만의 브랜드를 만들다.</p>

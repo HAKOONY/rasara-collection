@@ -162,15 +162,15 @@
         </div>
         </div>
  
-        <div class="menu-item">SYNTH
-          <div class="submenu">       
+        <div class="menu-item">
+          		<a href="https://hakoony.github.io/rasara-collection/ovi.html">Ville Lumière</a>       
           </div>
         </div>
       <div class="menu-item">
    			<a href="https://hakoony.github.io/rasara-collection/timelessabout.html">timelessabout</a>
 					</div>          
 
-         <div class="menu-item">?
+         <div class="menu-item">
           <div class="submenu">
       </div>
     </div>

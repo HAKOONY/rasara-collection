@@ -32,22 +32,26 @@
       height: 40px;
     }
 
-    .menu-bar {
-      display: flex;
-      gap: 20px;
-      position: relative;
-      flex-wrap: wrap;
-    }
+  .menu-bar {
+    display: flex;
+    align-items: center;
+    gap: 30px; /* ✅ 간격 통일 */
+    flex-wrap: wrap;
+  }
 
-    .menu-item {
-      position: relative;
-      font-weight: bold;
-      cursor: pointer;
-    }
+  .menu-item {
+    position: relative;
+    font-weight: bold;
+    cursor: pointer;
+  }
 
-    .menu-item:hover {
-      color: #a1001a;
-    }
+  .menu-item a {
+    color: #111;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 10px; /* ✅ 클릭 범위 확대 */
+    display: inline-block;
+  }
 
     .submenu {
       display: none;

@@ -252,7 +252,12 @@ make my brand
   <div class="image-item">
     <div class="image-title">TIMELESSABOUT</div>
     <img src="https://i.postimg.cc/zGs3WG3V/1750925772404.png" alt="timelessabout" />
-  </div>
+</div>
+ <div class="image-item">
+    <div class="image-title">Ville Lumière</div>
+    <img src="https://i.postimg.cc/TPCvr3b2/1751186179253.jpg" alt="Ville Lumière" />
+</div>
+
 </div>
 </body>
 </html>

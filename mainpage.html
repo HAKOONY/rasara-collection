@@ -3,35 +3,31 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Magazine B 공유 링크</title>
+  <title>RASARA 25 졸업기획전</title>
   <style>
     body {
-      margin: 0;
       font-family: 'Noto Sans KR', sans-serif;
-      background-color: #f8f8f8;
-      color: #111;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      min-height: 100vh;
-      transition: background-color 0.6s ease;
+      margin: 0;
+      padding: 0;
+      background: #f5f5f5; /* 전체 배경 라이트그레이 */
+      color: #333;
+      text-align: center; /* 기본 텍스트 가운데 정렬 */
     }
 
     .header-wrap {
-      background-color: #fff;
-      border-bottom: 1px solid #eee;
-      width: 100%;
+      background-color: #f5f5f5;
+      border-bottom: 1px solid #ddd;
     }
 
     .header {
       display: flex;
-      justify-content: space-between;
+      justify-content: center; /* 가운데 정렬 */
       align-items: center;
       padding: 15px 20px;
       max-width: 1280px;
       margin: 0 auto;
       flex-wrap: wrap;
+      gap: 30px;
     }
 
     .logo {
@@ -40,207 +36,164 @@
 
     .menu-bar {
       display: flex;
-      gap: 20px;
-      position: relative;
+      align-items: center;
+      gap: 30px;
       flex-wrap: wrap;
     }
 
-    .menu-item {
-      position: relative;
-      font-weight: bold;
-      cursor: pointer;
-    }
-
-    .menu-item:hover {
-      color: #a1001a;
-    }
-
-    .submenu {
-      display: none;
-      position: absolute;
-      top: 30px;
-      left: 0;
-      background-color: #fff;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-      padding: 10px 0;
-      border-radius: 6px;
-      z-index: 1000;
-      min-width: 140px;
-    }
-
-    .menu-item:hover .submenu {
-      display: block;
-    }
-
-    .submenu a {
-      display: block;
-      padding: 8px 20px;
+    .menu-item a {
+      color: #111;
       text-decoration: none;
-      font-size: 14px;
-      color: #333;
+      font-weight: bold;
+      padding: 8px 10px;
+      display: inline-block;
     }
 
-    .submenu a:hover {
-      background-color: #f5f5f5;
-    }
-
-    .container {
-      text-align: center;
-      padding: 40px;
-      background-color: white;
-      box-shadow: 0 0 15px rgba(0,0,0,0.05);
-      border-radius: 12px;
-      max-width: 600px;
-      width: 90%;
-      margin: 60px auto;
+    .menu-item a:hover {
+      color: #a1001a;
     }
 
     .title {
-      font-size: 24px;
+      font-size: 28px;
       font-weight: bold;
+      color: #a1001a;
+      margin: 40px 0 20px;
+    }
+
+    .slider {
+      width: 100%;
+      height: 250px;
+      position: relative;
+      overflow: hidden;
+      background-color: #f5f5f5;
+    }
+
+    .slider img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: scale-down;
+      padding: 10px;
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+      background-color: transparent;
+    }
+
+    .slider img.active {
+      opacity: 1;
+      z-index: 1;
+    }
+
+    .image-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 24px;
+      max-width: 1000px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+
+    .image-item {
       text-align: center;
-      margin: 30px 0 20px;
-      padding: 0 15px;
     }
 
-    .subtitle {
-      font-size: 16px;
-      color: #555;
-      margin-bottom: 30px;
+    .image-title {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #a1001a;
     }
 
-    .link-button {
+    .image-grid img {
+      width: 100%;
+      aspect-ratio: 1 / 1.2;
+      object-fit: cover;
+      border-radius: 16px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s ease;
+    }
+
+    .image-grid img:hover {
+      transform: scale(1.03);
+      box-shadow: 0 8px 20px rgba(161, 0, 26, 0.2);
+    }
+
+    .button-link {
       display: inline-block;
-      background-color: #000;
-      color: #fff;
-      padding: 12px 24px;
+      padding: 12px 30px;
+      background-color: #f5f5f5;
+      color: #a1001a;
+      border: 1px solid #a1001a;
       border-radius: 30px;
       text-decoration: none;
       font-weight: 500;
-      transition: background-color 0.3s ease;
-    }
-
-    .link-button:hover {
-      background-color: #444;
-    }
-
-    .product-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-      padding: 40px 20px;
-      max-width: 1200px;
-      width: 100%;
-      box-sizing: border-box;
-    }
-
-    .product-card {
-      display: block;
-      border: 1px solid #eee;
-      border-radius: 10px;
-      overflow: hidden;
-      text-align: center;
-      transition: transform 0.2s;
-      text-decoration: none;
-      color: inherit;
-      background-color: #fff;
-      padding: 20px;
-    }
-
-    .product-card:hover {
-      transform: scale(1.03);
-    }
-
-    .product-card img {
-      width: 100%;
-      height: auto;
-      border-radius: 10px;
-    }
-
-    .product-name {
       margin-top: 15px;
-      font-size: 18px;
-      font-weight: bold;
     }
 
-    .product-price {
-      color: #a1001a;
-      font-weight: bold;
-      padding-bottom: 15px;
-      font-size: 13px;
+    .button-link:hover {
+      background-color: #a1001a;
+      color: #fff;
     }
 
     @media (max-width: 480px) {
-      .title {
-        font-size: 20px;
-      }
-
-      .menu-bar {
+      .header {
         flex-direction: column;
-        gap: 10px;
+        gap: 15px;
       }
     }
   </style>
 </head>
 <body>
+
   <div class="header-wrap">
     <div class="header">
-      <img src="https://i.postimg.cc/sD4r1Vmv/rasara-oglogo.png" class="logo" alt="로고" />
+      <img src="https://i.postimg.cc/sD4r1Vmv/rasara-oglogo.png" class="logo" alt="라사라 로고" />
       <div class="menu-bar">
-        <div class="menu-item">OVI</div>
-        <div class="menu-item">SYNTH</div>
-        <div class="menu-item">ABOUT</div>
+        <div class="menu-item"><a href="#">OVI</a></div>
+        <div class="menu-item"><a href="#">Ville Lumière</a></div>
+        <div class="menu-item"><a href="#">Timelessabout</a></div>
       </div>
     </div>
   </div>
 
-  <div class="container">
-    <div class="title">Magazine B</div>
-    <div class="subtitle">브랜드의 본질을 깊이 있게 탐구하다</div>
-    <a href="https://share.google/R07cj5l6Q6KRqvljH" target="_blank" class="link-button">
-      링크 열기
-    </a>
+  <div class="slider">
+    <img src="https://i.postimg.cc/VsM1Q9b9/image.jpg" class="slide active" />
+    <img src="https://i.postimg.cc/pdCmfTRJ/1750925772270.png" class="slide" />
   </div>
 
-  <div class="product-grid">
-    <a href="https://www.instagram.com/o_vi_official/" class="product-card" target="_blank">
-      <img src="https://i.postimg.cc/XN9x0XNB/ovi.png" alt="OVI_1">
-      <div class="product-name">OVI_1</div>
-      <div class="product-price">₩00,000</div>
-    </a>
+  <div class="title">25 RASARA X BRAND-ER COLLECTION</div>
 
-    <a href="https://www.instagram.com/o_vi_official/" class="product-card" target="_blank">
-      <img src="https://i.postimg.cc/8CDNt7Cd/ovi-2.png" alt="OVI_2">
-      <div class="product-name">OVI_2</div>
-      <div class="product-price">₩000,000</div>
-    </a>
+  <div>
+    <img src="https://i.postimg.cc/76k0stMf/image.png" alt="BRAND-ER 로고" style="height: 40px; margin-bottom: 20px;">
+    <h2 style="font-size: 36px; font-weight: bold;">BRAND-ER</h2>
+    <p style="font-size: 20px; color: #555;">당신만의 브랜드를 만들다.</p>
+    <a href="https://brand-er.store/custom/index.html" target="_blank" class="button-link">make my brand</a>
+  </div>
 
-    <a href="https://www.instagram.com/synth_official/" class="product-card" target="_blank">
-      <img src="https://i.postimg.cc/k4LnNfRG/synth.png" alt="SYNTH_1">
-      <div class="product-name">SYNTH_1</div>
-      <div class="product-price">₩00,000</div>
-    </a>
-
-    <a href="https://www.instagram.com/timelessabout/" class="product-card" target="_blank">
-      <img src="https://i.postimg.cc/ZnkSvnXy/image.png" alt="TIMELESS_1">
-      <div class="product-name">TIMELESS_1</div>
-      <div class="product-price">₩00,000</div>
-    </a>
+  <div class="image-grid">
+    <div class="image-item">
+      <div class="image-title">OVI</div>
+      <img src="https://i.postimg.cc/rphnQsRN/1750937125634.png" alt="ovi" />
+    </div>
+    <div class="image-item">
+      <div class="image-title">TIMELESSABOUT</div>
+      <img src="https://i.postimg.cc/zGs3WG3V/1750925772404.png" alt="timelessabout" />
+    </div>
+    <div class="image-item">
+      <div class="image-title">Ville Lumière</div>
+      <img src="https://i.postimg.cc/TPCvr3b2/1751186179253.jpg" alt="Ville Lumière" />
+    </div>
   </div>
 
   <script>
-    const body = document.body;
-    const cards = document.querySelectorAll(".product-card");
-    const colors = ["#f7e8ec", "#f8f8f8"];
-
-    window.addEventListener("scroll", () => {
-      cards.forEach((card, index) => {
-        const rect = card.getBoundingClientRect();
-        if (rect.top >= 0 && rect.top <= window.innerHeight / 2) {
-          body.style.backgroundColor = colors[index % 2];
-        }
-      });
-    });
+    const slides = document.querySelectorAll(".slide");
+    let index = 0;
+    function showNextSlide() {
+      slides[index].classList.remove("active");
+      index = (index + 1) % slides.length;
+      slides[index].classList.add("active");
+    }
+    setInterval(showNextSlide, 2000);
   </script>
 </body>
 </html>

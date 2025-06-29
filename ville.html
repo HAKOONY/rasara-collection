@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OVI 브랜드 소개</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Noto Sans KR', sans-serif;
+      background-color: #fff;
+      color: #333;
+    }
+
+    .brand-header {
+      display: flex;
+      align-items: center;
+      padding: 20px;
+      gap: 15px;
+    }
+
+    .brand-logo {
+      height: 40px;
+    }
+
+    .brand-title {
+      font-size: 20px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    .main-image {
+      width: 100%;
+      height: 100vh;
+      object-fit: cover;
+    }
+
+    .brand-description {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+      font-size: 16px;
+      line-height: 1.6;
+      text-align: center;
+    }
+
+    @media (max-width: 768px) {
+      .brand-header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .brand-title {
+        font-size: 18px;
+        margin-top: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 상단 로고 + 브랜드명 -->
+<div class="brand-header">
+  <img src="https://i.postimg.cc/KvvCx7G5/1750933135843.jpg" alt="브랜드 로고" class="brand-logo" />
+  <div class="brand-title">Ville Lumière</div>
+</div>
+
+  <!-- 메인 배너 이미지 -->
+  <img src="https://i.postimg.cc/TPCvr3b2/1751186179253.jpg" alt="메인 이미지" class="main-image" />
+
+  <!-- 브랜드 설명 -->
+  <div class="brand-description">
+    <h2>Ville Lumière(빌루미에르)</h2>
+    <p>Ville Lumière(빌루미에르)는 ‘빛의 도시’ 라는 의미를 담은 프랑스어로,<br />
+       빛이 실루엣을 부드럽게 감싸듯,섬세한 곡선과 감각적인 흐름과 란제리에서 <br />
+					착안한 디테일을 통해 여성의 내면까지 빛나게 합니다.  
+    </p>
+  </div>
+
+</body>
+</html>

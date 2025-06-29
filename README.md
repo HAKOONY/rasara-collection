@@ -262,7 +262,4 @@ make my brand
 			<img src="https://i.postimg.cc/TPCvr3b2/1751186179253.jpg" alt="Ville Lumière" />
 </div>
 
-</div>
-</body>
-</html>
 

@@ -175,7 +175,6 @@ body {
 <div class="slider">
   <img src="https://i.postimg.cc/vmX9SnyW/ville.jpg" class="slide active" />
   <img src="https://i.postimg.cc/KvvCx7G5/1750933135843.jpg" class="slide" />
- <img src=""https://i.postimg.cc/rphnQsRN/1750937125634.png" class="slide" />
 </div>
 
 <style>

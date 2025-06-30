@@ -53,14 +53,18 @@ body {
     }
       
        .menu-item a {
-      color: #111; /* 검정색 텍스트 */
-      text-decoration: none;
-      font-weight: bold;
-    }
+  color: #d3d3d3 !important; /* ✅ 기본 라이트그레이 */
+  text-decoration: none;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 20px;
+  transition: background 0.3s ease;
+}
 
-    .menu-item a:hover {
-      color: #a1001a; /* hover 시 와인색 강조 */
-    }
+  .menu-item a:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #ffffff !important; /* ✅ 호버 시 흰색 */
+}
 
     .submenu a {
       display: block;
@@ -106,15 +110,19 @@ body {
 
   /* 👇 여기에 추가하세요 */
 
-  .image-item {
-    text-align: center;
-  }
+ .image-item {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-  .image-title {
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
+.image-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+  text-align: center;
+}
 
 
 .image-grid img:hover {
@@ -141,39 +149,30 @@ body {
 <body>
 
   <!-- 상단 로고 & 카테고리 -->
-  <div class="header-wrap">
-    <div class="header">
-      <img src="https://i.postimg.cc/sD4r1Vmv/rasara-oglogo.png" class="logo" alt="라사라 로고" />
+  <!-- 상단 로고 & 카테고리 -->
+<div class="header-wrap">
+  <div class="header" style="display:flex; justify-content: space-between; align-items: center; max-width: 1280px; margin: 0 auto; padding: 0 20px;">
+    
+    <!-- 🔻 라사라 로고 작게 -->
+    <a href="https://hakoony.github.io/rasara-collection/" style="display: flex; align-items: center; gap: 8px; text-decoration: none;">
+      <img src="https://i.postimg.cc/sD4r1Vmv/rasara-oglogo.png" class="logo" alt="라사라 로고" style="height: 28px;" />
+      <span style="font-size: 16px; font-weight: 600; color: #a1001a;">rasara-collection</span>
+    </a>
 
-      <div class="menu-bar">
-        <div class="menu-item">
-  					<a href="https://hakoony.github.io/rasara-collection/ovi.html">OVI</a>
-          <div class="submenu">
-        </div>
-        </div>
- 
-        <div class="menu-item">
-          		<a href="https://hakoony.github.io/rasara-collection/ville.html">Ville Lumière</a>       
-          </div>
-        </div>
+ <div class="menu-bar">
       <div class="menu-item">
-   			<a href="https://hakoony.github.io/rasara-collection/timelessabout.html">timelessabout</a>
-					</div>          
-
-         <div class="menu-item">
-          <div class="submenu">
+        <a href="https://hakoony.github.io/rasara-collection/ovi.html" style="color:#d3d3d3;">OVI</a>
+      </div>
+      <div class="menu-item">
+        <a href="https://hakoony.github.io/rasara-collection/ville.html" style="color:#d3d3d3;">Ville Lumière</a>
+      </div>
+      <div class="menu-item">
+        <a href="https://hakoony.github.io/rasara-collection/timelessabout.html" style="color:#d3d3d3;">timelessabout</a>
       </div>
     </div>
-     <div class="menu-item">?
-          <div class="submenu">
-            <a href="#">모자</a>
-            <a href="#">가방</a>
-            <a href="#">양말</a>
   </div>
 </div>
-</div>
-</div>
-
+    
   <!-- 배너 -->
 <!-- 슬라이드 배너 -->
 <div class="slider">

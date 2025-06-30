@@ -1,56 +1,43 @@
-# rasara-collection
 <html lang="ko">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>RASARA 25 졸업기획전</title>
   <style>
-    body {
-      font-family: 'Noto Sans KR', sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #ffffff;
-      color: #333;
-    }
-
-    .header-wrap {
-  background-color: #a1001a; /* ✅ 와인색 배경 */
-  border-bottom: 1px solid #eee;
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f0f0f0; /* ✅ 전체 배경 라이트그레이 */
+  color: #333;
 }
 
-    .header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 15px 20px;
-      max-width: 1280px;
-      margin: 0 auto;
-      flex-wrap: wrap;
-    }
+.header-wrap {
+  background-color: #a1001a; /* ✅ 와인색 */
+  padding: 10px 0;
+}
 
-    .logo {
-      height: 40px;
-    }
-
-  .menu-bar {
-    display: flex;
-    align-items: center;
-    gap: 30px; /* ✅ 간격 통일 */
-    flex-wrap: wrap;
-  }
+.menu-bar {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
 .menu-item a {
-  color: #e5e5e5; /* ✅ 라이트그레이 텍스트 */
+  color: #f0f0f0; /* ✅ 밝은 회색 텍스트 */
   text-decoration: none;
-  font-weight: bold;
-  padding: 8px 10px;
-  display: inline-block;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 20px;
+  transition: background 0.3s ease;
 }
 
 .menu-item a:hover {
-  color: #fff; /* hover 시 흰색 강조 */
+  background-color: rgba(255, 255, 255, 0.15); /* ✅ 자연스러운 호버 효과 */
+  color: #fff;
 }
-
 
  .submenu {
       display: none;
@@ -236,7 +223,7 @@
   <div class="title">25 RASARA X BRAND-ER COLLECTION </div>
 
 <!-- ✅ BRAND-ER 박스 수정본 (배경색만 유지하고 글자 삭제) -->
-<div style="max-width: 600px; margin: 50px auto; padding: 40px; background: #f0f0f0; box-shadow: 0 0 15px rgba(0,0,0,0.05); border-radius: 12px; text-align: center; display: flex; flex-direction: column; align-items: center;">
+<div style="max-width: 600px; margin: 50px auto; padding: 40px; background: #ffffff; box-shadow: 0 0 15px rgba(0,0,0,0.05); border-radius: 12px; text-align: center; display: flex; flex-direction: column; align-items: center;">
   <img src="https://i.postimg.cc/76k0stMf/image.png" alt="BRAND-ER 로고" style="height: 40px; margin-bottom: 20px;">
   <a href="https://brand-er.store/custom/index.html" target="_blank" style="display: inline-block; padding: 12px 30px; background-color: #f5f5f5; color:#a1001a;border-radius: 30px; text-decoration: none; font-weight: 500;">
     make my brand    

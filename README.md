@@ -14,9 +14,9 @@
     }
 
     .header-wrap {
-      background-color: #fff;
-      border-bottom: 1px solid #eee;
-    }
+  background-color: #a1001a; /* ✅ 와인색 배경 */
+  border-bottom: 1px solid #eee;
+}
 
     .header {
       display: flex;
@@ -39,21 +39,20 @@
     flex-wrap: wrap;
   }
 
-  .menu-item {
-    position: relative;
-    font-weight: bold;
-    cursor: pointer;
-  }
+.menu-item a {
+  color: #e5e5e5; /* ✅ 라이트그레이 텍스트 */
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 10px;
+  display: inline-block;
+}
 
-  .menu-item a {
-    color: #111;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 8px 10px; /* ✅ 클릭 범위 확대 */
-    display: inline-block;
-  }
+.menu-item a:hover {
+  color: #fff; /* hover 시 흰색 강조 */
+}
 
-    .submenu {
+
+ .submenu {
       display: none;
       position: absolute;
       top: 30px;
@@ -119,6 +118,7 @@
   transition: transform 0.3s ease;
 
   /* 👇 여기에 추가하세요 */
+
   .image-item {
     text-align: center;
   }
@@ -135,7 +135,6 @@
 }
 
  
-
     @media (max-width: 480px) {
       .title {
         font-size: 20px;
@@ -236,15 +235,13 @@
   <!-- 타이틀 -->
   <div class="title">25 RASARA X BRAND-ER COLLECTION </div>
 
-
-<div style="max-width: 600px; margin: 50px auto; padding: 40px; background: #ffffff; box-shadow: 0 0 15px rgba(0,0,0,0.05); border-radius: 12px; text-align: center; display: flex; flex-direction: column; align-items: center;">
+<!-- ✅ BRAND-ER 박스 수정본 (배경색만 유지하고 글자 삭제) -->
+<div style="max-width: 600px; margin: 50px auto; padding: 40px; background: #f0f0f0; box-shadow: 0 0 15px rgba(0,0,0,0.05); border-radius: 12px; text-align: center; display: flex; flex-direction: column; align-items: center;">
   <img src="https://i.postimg.cc/76k0stMf/image.png" alt="BRAND-ER 로고" style="height: 40px; margin-bottom: 20px;">
-<h2 style="font-size: 36px; font-weight: bold; margin-bottom: 15px; width: 100%; text-align: center;">  BRAND-ER</h2>
-  <p style="font-size: 25px; color: #555; margin-bottom: 25px;">당신만의 브랜드를 만들다.</p>
   <a href="https://brand-er.store/custom/index.html" target="_blank" style="display: inline-block; padding: 12px 30px; background-color: #f5f5f5; color:#a1001a;border-radius: 30px; text-decoration: none; font-weight: 500;">
-make my brand    
+    make my brand    
   </a>
-</div>
+</div>    
 <div class="image-grid">
   <div class="image-item">
     <div class="image-title">OVI</div>

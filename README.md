@@ -174,7 +174,8 @@ body {
 <!-- 슬라이드 배너 -->
 <div class="slider">
   <img src="https://i.postimg.cc/VsM1Q9b9/image.jpg" class="slide active" />
-  <img src="https://i.postimg.cc/pdCmfTRJ/1750925772270.png" class="slide" />
+  <img src="https://i.postimg.cc/KvvCx7G5/1750933135843.jpg" class="slide" />
+ <img src="https://i.postimg.cc/KvvCx7G5/1750933135843.jpg" class="slide" />
 </div>
 
 <style>

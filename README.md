@@ -107,8 +107,7 @@ body {
   border-radius: 16px;   /* ✅ 부드러운 테두리 */
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05); /* ✅ 고급스러운 그림자 */
   transition: transform 0.3s ease;
-
-  /* 👇 여기에 추가하세요 */
+}
 
  .image-item {
   text-align: center;
@@ -149,14 +148,12 @@ body {
 <body>
 
   <!-- 상단 로고 & 카테고리 -->
-  <!-- 상단 로고 & 카테고리 -->
 <div class="header-wrap">
   <div class="header" style="display:flex; justify-content: space-between; align-items: center; max-width: 1280px; margin: 0 auto; padding: 0 20px;">
     
-    <!-- 🔻 라사라 로고 작게 -->
-    <a href="https://hakoony.github.io/rasara-collection/" style="display: flex; align-items: center; gap: 8px; text-decoration: none;">
-      <img src="https://i.postimg.cc/sD4r1Vmv/rasara-oglogo.png" class="logo" alt="라사라 로고" style="height: 28px;" />
-      <span style="font-size: 16px; font-weight: 600; color: #a1001a;">rasara-collection</span>
+    <!-- 🔻 라사라 로고만 표시 (텍스트 제거) -->
+    <a href="https://hakoony.github.io/rasara-collection/" style="display: flex; align-items: center; text-decoration: none;">
+      <img src="https://i.postimg.cc/sD4r1Vmv/rasara-oglogo.png" class="logo" alt="라사라 로고" style="height: 40px; mix-blend-mode: multiply; filter: contrast(1.2);" />
     </a>
 
  <div class="menu-bar">
@@ -234,15 +231,20 @@ body {
     <div style="align-items:center;">
     <img src="https://i.postimg.cc/rphnQsRN/1750937125634.png" alt="ovi" />
   </div>
+  </div>
   <div class="image-item">
     <div class="image-title">TIMELESSABOUT</div>
-    <div style="align-item:center;">
+    <div style="align-items:center;">
 			<img src="https://i.postimg.cc/zGs3WG3V/1750925772404.png" alt="timelessabout" />
 </div>
+ </div>
  <div class="image-item">
     <div class="image-title">Ville Lumière</div>
-    <div style="align-item:conter;">
+    <div style="align-items:center;">
 			<img src="https://i.postimg.cc/TPCvr3b2/1751186179253.jpg" alt="Ville Lumière" />
 </div>
+</div>
+</div>
 
-
+</body>
+</html>

@@ -227,15 +227,16 @@ body {
 </div>    
 <div class="image-grid">
   <div class="image-item">
-    <div class="image-title">OVI</div>
-    <div style="align-items:center;">
-    <img src="https://i.postimg.cc/rphnQsRN/1750937125634.png" alt="ovi" />
+<div style="align-items:center;">
+  <a href="https://www.instagram.com/o_vi_official?igsh=MWxqZHg3bTRvd2dwYw==" target="_blank">
+    <img src="https://i.postimg.cc/5NJnpXs8/1750937125634.png" alt="ovi" />
+  </a>  
+</div>
   </div>
-  </div>
-  <div class="image-item">
-    <div class="image-title">TIMELESSABOUT</div>
-    <div style="align-items:center;">
-			<img src="https://i.postimg.cc/zGs3WG3V/1750925772404.png" alt="timelessabout" />
+<div style="align-items:center;">
+  <a href="https://www.instagram.com/timeless_about?igsh=N3pqcWMyc2s4aDkw" target="_blank">
+    <img src="https://i.postimg.cc/zGs3WG3V/1750925772404.png" alt="timelessabout" />
+  </a>
 </div>
  </div>
  <div class="image-item">

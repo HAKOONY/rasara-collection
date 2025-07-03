@@ -227,25 +227,22 @@ body {
 </div>    
 <div class="image-grid">
   <div class="image-item">
-<div style="align-items:center;">
-  <a href="https://www.instagram.com/o_vi_official?igsh=MWxqZHg3bTRvd2dwYw==" target="_blank">
-    <img src="https://i.postimg.cc/5NJnpXs8/1750937125634.png" alt="ovi" />
-  </a>  
-</div>
+    <a href="https://www.instagram.com/o_vi_official?igsh=MWxqZHg3bTRvd2dwYw==" target="_blank">
+      <img src="https://i.postimg.cc/5NJnpXs8/1750937125634.png" alt="ovi" />
+    </a>  
   </div>
-<div style="align-items:center;">
-  <a href="https://www.instagram.com/timeless_about?igsh=N3pqcWMyc2s4aDkw" target="_blank">
-    <img src="https://i.postimg.cc/zGs3WG3V/1750925772404.png" alt="timelessabout" />
-  </a>
-</div>
- </div>
- <div style="align-items:center;">
-  <a href="https://www.instagram.com/villelumiere_official?igsh=anR3a2V5ajFzeDBo" target="_blank">
-    <img src="https://i.postimg.cc/WpxJgrrh/1751186179253.jpg" alt="villelumiere" />
-  </a>
-</div>
-</div>
-</div>
 
+  <div class="image-item">
+    <a href="https://www.instagram.com/timeless_about?igsh=N3pqcWMyc2s4aDkw" target="_blank">
+      <img src="https://i.postimg.cc/zGs3WG3V/1750925772404.png" alt="timelessabout" />
+    </a>
+  </div>
+
+  <div class="image-item">
+    <a href="https://www.instagram.com/villelumiere_official?igsh=anR3a2V5ajFzeDBo" target="_blank">
+      <img src="https://i.postimg.cc/WpxJgrrh/1751186179253.jpg" alt="villelumiere" />
+    </a>
+  </div>
+</div>
 </body>
 </html>

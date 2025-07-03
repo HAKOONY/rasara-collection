@@ -5,20 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>OVI 브랜드 소개</title>
   <style>
-<!-- BRAND-ER X OVI 섹션 -->
-  <div style="text-align: center; margin: 60px 20px 30px;">
-    <h2 style="font-size: 22px; margin-bottom: 20px;">BRAND-ER X OVI</h2>
-    <div style="
-      display: flex;
-      justify-content: center;
-      gap: 16px;
-      flex-wrap: wrap;
-    ">
-      <img src="https://i.postimg.cc/SKz1cKZ2/1748393260911.webp" alt="AI이미지" style="max-width: 160px; height: auto;" />
-      <img src="" alt="실물 이미지" style="max-width: 160px; height: auto;" />
-    </div>
-  </div>
-
     body {
       margin: 0;
       font-family: 'Noto Sans KR', sans-serif;
@@ -58,6 +44,23 @@
       text-align: center;
     }
 
+    .brand-partner-section {
+      text-align: center;
+      margin: 60px 20px 30px;
+    }
+
+    .brand-partner-images {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .brand-partner-images img {
+      max-width: 160px;
+      height: auto;
+    }
+
     @media (max-width: 768px) {
       .brand-header {
         flex-direction: column;
@@ -74,10 +77,10 @@
 <body>
 
   <!-- 상단 로고 + 브랜드명 -->
-<div class="brand-header">
-  <img src="https://i.postimg.cc/KvvCx7G5/1750933135843.jpg" alt="브랜드 로고" class="brand-logo" />
-  <div class="brand-title">OVI</div>
-</div>
+  <div class="brand-header">
+    <img src="https://i.postimg.cc/KvvCx7G5/1750933135843.jpg" alt="브랜드 로고" class="brand-logo" />
+    <div class="brand-title">OVI</div>
+  </div>
 
   <!-- 메인 배너 이미지 -->
   <img src="https://i.postimg.cc/rphnQsRN/1750937125634.png" alt="메인 이미지" class="main-image" />
@@ -87,8 +90,17 @@
     <h2>OVI</h2>
     <p>
       다크웨어를 기반으로 시크한 무드와 아티잔 정신을 결합해 단순한 블랙이 아닌,<br />
-      검정의 미학을 재해석하여 깊이있는 스타일을 창조하는 유니섹스 아방가르드 브랜드.<br />  
+      검정의 미학을 재해석하여 깊이있는 스타일을 창조하는 유니섹스 아방가르드 브랜드.
     </p>
+  </div>
+
+  <!-- BRAND-ER X OVI 섹션 -->
+  <div class="brand-partner-section">
+    <h2 style="font-size: 22px; margin-bottom: 20px;">BRAND-ER X OVI</h2>
+    <div class="brand-partner-images">
+      <img src="https://i.postimg.cc/SKz1cKZ2/1748393260911.webp" alt="AI 이미지" />
+      <img src="https://i.postimg.cc/xxxxxxxx/real-image.jpg" alt="실물 이미지" /> <!-- 실물 이미지 링크 넣으세요 -->
+    </div>
   </div>
 
 </body>

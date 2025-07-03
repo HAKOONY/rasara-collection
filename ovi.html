@@ -44,22 +44,32 @@
       text-align: center;
     }
 
-    .brand-partner-section {
-      text-align: center;
-      margin: 60px 20px 30px;
-    }
+  .brand-partner-section {
+    text-align: center;
+    margin: 60px 20px 30px;
+    overflow-x: auto; /* ✅ 모바일에서 강제로 한 줄 유지 */
+  }
+
   .brand-partner-images {
-    display: flex;
+    display: inline-flex; /* ✅ flex이면서 줄바꿈 X */
     justify-content: center;
+    align-items: center;
     gap: 16px;
-    flex-wrap: nowrap; /* ✅ 핵심 수정 */
   }
 
   .brand-partner-images img {
-    width: 40%;         /* ✅ 반응형 너비 */
-    max-width: 160px;
+    width: 140px;     /* ✅ 이미지 너비 고정 */
     height: auto;
+    flex-shrink: 0;   /* ✅ 이미지 줄어들지 않게 */
   }
+
+  @media (max-width: 768px) {
+    .brand-partner-images {
+      justify-content: flex-start; /* ✅ 모바일에선 왼쪽 정렬 + 스크롤 */
+    }
+  }
+
+</style>
  
     @media (max-width: 768px) {
       .brand-header {

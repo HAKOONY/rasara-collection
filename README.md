@@ -239,10 +239,10 @@ body {
   </a>
 </div>
  </div>
- <div class="image-item">
-    <div class="image-title">Ville Lumière</div>
-    <div style="align-items:center;">
-			<img src="https://i.postimg.cc/TPCvr3b2/1751186179253.jpg" alt="Ville Lumière" />
+ <div style="align-items:center;">
+  <a href="https://www.instagram.com/villelumiere_official?igsh=anR3a2V5ajFzeDBo" target="_blank">
+    <img src="https://i.postimg.cc/WpxJgrrh/1751186179253.jpg" alt="villelumiere" />
+  </a>
 </div>
 </div>
 </div>
